@@ -1,0 +1,39 @@
+ul {
+    list-style: none;
+}
+
+
+.photo-container {
+    display: grid;
+    grid-gap: 10px;
+    margin: 5px 5px 5px 5px;
+    grid-template-columns: 20% 20% 20%;
+}
+
+.a {
+    color: rgb(48, 111, 167);
+    text-decoration: none;
+    grid-area: 1/1/1/6
+}
+
+.b {
+    border: none;
+    width: 150px;
+    max-width: 150px;
+    height: 45px;
+    max-height: 75px;
+    border-radius: 20px;
+    background-color: rgb(105, 153, 184);
+    color: white;
+}
+
+@media only screen and (max-device-width: 360px) {
+    .photo {
+
+        width: 18rem !important;
+    }
+
+    .photo button {
+        width: 100px
+    }
+}

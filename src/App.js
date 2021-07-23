@@ -31,7 +31,12 @@ function App() {
             return state.albums.map((album) => {
               return (
                 <>
-                  <Album key={album.id} id={album.id} title={album.title} />
+                  <Album
+                    className="Album"
+                    key={album.id}
+                    id={album.id}
+                    title={album.title}
+                  />
                 </>
               );
             });

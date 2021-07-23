@@ -1,0 +1,9 @@
+@media only screen and (max-device-width: 360px) {
+    .nav {
+        width: 22rem !important;
+    }
+
+    .nav button {
+        width: 100px
+    }
+}

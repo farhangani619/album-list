@@ -1,0 +1,19 @@
+.album {
+    /* background-color: rebeccapurple; */
+    margin: 10px 0;
+    width: 50%;
+    margin-left: 25%;
+
+
+}
+
+.album ul {
+    list-style-type: none;
+}
+
+
+.album .list h1 {
+    color: rgb(185, 185, 185);
+    font-weight: 10px;
+    font-style: italic;
+}
