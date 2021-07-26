@@ -1,6 +1,6 @@
-@media only screen and (max-device-width: 360px) {
+@media only screen and (max-device-width: 768px) {
     .wishlist {
-        width: 22rem !important;
+        width: 18rem !important;
     }
 
     .wishlist button {

@@ -27,7 +27,7 @@ ul {
     color: white;
 }
 
-@media only screen and (max-device-width: 360px) {
+@media only screen and (max-device-width: 768px) {
     .photo {
 
         width: 18rem !important;
