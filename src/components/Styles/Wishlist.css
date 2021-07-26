@@ -1,6 +1,5 @@
 .wishlist {
     display: grid;
-    border: 2px solid red;
     grid-template-columns: 20% 20% 20% 20% 20%;
 
 }
@@ -16,7 +15,6 @@
 
 @media (min-device-width:768px) and (max-device-width:1023px) {
     .wishlist {
-        border: 2px solid rgb(172, 255, 63);
 
         grid-template-columns: 20% 20% 20% !important;
         align-items: center;
@@ -25,7 +23,7 @@
     }
 
     .wishlist-items {
-        border: 2px solid green;
+
         width: 90% !important;
         height: auto;
     }
@@ -38,7 +36,7 @@
 
 @media (max-device-width:767px) {
     .wishlist {
-        border: 2px solid blue;
+
 
         grid-template-columns: 90% !important;
         align-items: center;
@@ -47,7 +45,7 @@
     }
 
     .wishlist-items {
-        border: 2px solid green;
+
         width: 60% !important;
     }
 
@@ -59,7 +57,7 @@
 
 @media (max-device-width:468px) {
     .wishlist {
-        border: 2px solid blue;
+
 
         grid-template-columns: 90% !important;
         align-items: center;
@@ -67,7 +65,7 @@
     }
 
     .wishlist-items {
-        border: 2px solid green;
+
         width: 60% !important
     }
 
