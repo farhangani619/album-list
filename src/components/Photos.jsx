@@ -24,28 +24,37 @@ function Photos(props) {
   }
   console.log(state);
 
-  return state.photos.map((photo) => {
-    return (
-      <div className="card mx-auto mt-3 mb-3 photo" style={{ width: "30rem" }}>
-        <img
-          className="card-img-top"
-          src={photo.thumbnailUrl}
-          alt={photo.title}
-        />
-        <div className="photo-container" key={photo.id}>
-          <p className="card-text a">
-            <a href={photo.url}>{photo.title}</a>
-          </p>
-          <button
-            type="button"
-            className="btn btn-success"
-            onClick={(event) => onWishList(event, photo.thumbnailUrl, photo.id)}
+  return (
+    <div className="photo">
+      {state.photos.map((photo) => {
+        return (
+          <div
+            className="card  mt-3 mb-3 items photo-container"
+            style={{ width: "90%" }}
           >
-            wishlist
-          </button>
-        </div>
-      </div>
-    );
-  });
+            <img
+              className="card-img-top"
+              src={photo.thumbnailUrl}
+              alt={photo.title}
+            />
+            <div className="photo-container" key={photo.id}>
+              <p className="card-text a">
+                <a href={photo.url}>{photo.title}</a>
+              </p>
+              <button
+                type="button"
+                className="btn btn-success"
+                onClick={(event) =>
+                  onWishList(event, photo.thumbnailUrl, photo.id)
+                }
+              >
+                wishlist
+              </button>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 export default Photos;

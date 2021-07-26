@@ -2,38 +2,63 @@ ul {
     list-style: none;
 }
 
+.photo {
+    display: grid;
+    border: 2px solid red;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+}
 
 .photo-container {
     display: grid;
-    grid-gap: 10px;
-    margin: 5px 5px 5px 5px;
-    grid-template-columns: 20% 20% 20%;
+    grid-auto-flow: row
 }
 
-.a {
-    color: rgb(48, 111, 167);
-    text-decoration: none;
-    grid-area: 1/1/1/6
-}
 
-.b {
-    border: none;
-    width: 150px;
-    max-width: 150px;
-    height: 45px;
-    max-height: 75px;
-    border-radius: 20px;
-    background-color: rgb(105, 153, 184);
-    color: white;
-}
-
-@media only screen and (max-device-width: 768px) {
+@media (min-device-width:768px) and (max-device-width:1023px) {
     .photo {
+        border: 2px solid rgb(172, 255, 63);
 
-        width: 18rem !important;
+        grid-template-columns: 20% 20% 20% !important;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
     }
 
-    .photo button {
-        width: 100px
+    .items {
+        border: 2px solid green;
+        width: 90% !important;
+        height: 90%;
+    }
+}
+
+@media (max-device-width:767px) {
+    .photo {
+        border: 2px solid blue;
+
+        grid-template-columns: 90% !important;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+    }
+
+    .items {
+        border: 2px solid green;
+        width: 60% !important
+    }
+}
+
+@media (max-device-width:468px) {
+    .photo {
+        border: 2px solid blue;
+
+        grid-template-columns: 90% !important;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .items {
+        border: 2px solid green;
+        width: 60% !important
     }
 }

@@ -15,29 +15,34 @@ function Wishlist() {
     event.stopPropagation();
     removeWishlist(index);
   }
-  return state.wishlist.map((wishlistItem, index) => {
-    return (
-      <div
-        className="card mx-auto text-center mt-3 mb-3 wishlist"
-        style={{ width: "30rem" }}
-      >
-        <img
-          className="card-img-top "
-          src={wishlistItem.wishlistItem}
-          alt="jddjdj"
-        />
-        <div>
-          <button
-            type="button"
-            className="btn btn-secondary"
-            onClick={(event) => onRemoveWishlist(event, index)}
+
+  return (
+    <div className="wishlist">
+      {state.wishlist.map((wishlistItem, index) => {
+        return (
+          <div
+            className="card mx-auto text-center mt-3 mb-3 wishlist-items wishlist-container"
+            style={{ width: "90%" }}
           >
-            Remove
-          </button>
-        </div>
-      </div>
-    );
-  });
+            <img
+              className="card-img-top "
+              src={wishlistItem.wishlistItem}
+              alt="jddjdj"
+            />
+            <div>
+              <button
+                type="button"
+                className="btn btn-danger button"
+                onClick={(event) => onRemoveWishlist(event, index)}
+              >
+                Remove
+              </button>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
 }
 
 export default Wishlist;
