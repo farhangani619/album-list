@@ -22,7 +22,7 @@ function Wishlist() {
         return (
           <div
             className="card mx-auto text-center mt-3 mb-3 wishlist-items wishlist-container"
-            style={{ width: "90%" }}
+            style={{ width: "12em" }}
           >
             <img
               className="card-img-top "

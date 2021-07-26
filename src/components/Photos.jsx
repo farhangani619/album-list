@@ -29,8 +29,8 @@ function Photos(props) {
       {state.photos.map((photo) => {
         return (
           <div
-            className="card  mt-3 mb-3 items photo-container"
-            style={{ width: "90%" }}
+            className="card mx-auto text-center mt-3 mb-3 items photo-container"
+            style={{ width: "12em" }}
           >
             <img
               className="card-img-top"
@@ -43,7 +43,7 @@ function Photos(props) {
               </p>
               <button
                 type="button"
-                className="btn btn-success"
+                className="btn btn-success button"
                 onClick={(event) =>
                   onWishList(event, photo.thumbnailUrl, photo.id)
                 }
